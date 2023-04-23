@@ -147,7 +147,7 @@ TComplejo operator* (double d, const TComplejo& op2){
 }
 
 bool TComplejo::operator< (const TComplejo &obj){
-    if (&obj != this){
+    if (this->Mod() != obj.Mod() && this->Re() != obj.Re()){
         return (!(*this>obj));
     }
     return false;
