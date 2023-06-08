@@ -1,0 +1,16 @@
+Copia las carpetas "ComplejoPrueba", "TVectorCom_PRUEBA" y "TListaCom_PRUEBA" de los ficheros de prueba en el directorio "src" de tu proyecto.
+
+Copia el fichero "evalua.sh" en el directorio "src" de tu proyecto.
+
+El directorio "src" debe contener el fichero "evalua.sh" y los subdirectorios "ComplejoPrueba", "TVectorCom_PRUEBA" y "TListaCom_PRUEBA".
+
+Para comprobar si tu práctica pasa los ficheros de prueba, ejecuta, desde un terminal, en la carpeta "src" de tu proyecto:
+
+bash evalua.sh
+
+El programa imprimirá por cada fichero evaluado:
+
+- Evaluando NOMBRE_DE_FICHERO, por ejemplo "Evaluando tporo/tad09.cpp"
+- Salida del comando make. Por ejemplo: "g++ -g   -Iinclude src/tad.cpp lib/tcomplejo.o lib/tvectorcom.o -o tad"
+- Diferencias entre la salida del programa y la salida esperada, si las hay. La prueba se ha pasado correctamente si no hay diferencias.
+- "OK" si no hay diferencias o "ERROR" si las hay.
